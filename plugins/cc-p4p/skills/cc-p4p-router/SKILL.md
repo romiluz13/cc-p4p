@@ -78,21 +78,38 @@ After loading memory files, ensure ALL required sections exist.
 `## Current Focus`, `## Recent Work`, `## Decisions`, `## Open Questions`, `## References`, `## Last Updated`
 
 ### insights.md - Required Sections
-`## User Research Insights`, `## Competitive Intelligence`, `## Customer Feedback Themes`, `## Last Updated`
+`## User Research Insights`, `## Competitive Intelligence`, `## Customer Feedback Themes`, `## Personas`, `## Last Updated`
 
 ### roadmap-state.md - Required Sections
-`## Current Priorities`, `## Shipped`, `## Dependencies`, `## Last Updated`
+`## Current Priorities`, `## Shipped`, `## Dependencies`, `## Capacity Notes`, `## Last Updated`
 
-**Auto-heal pattern:**
+**Auto-heal pattern (apply to EACH file, EACH missing section):**
+
+activeContext.md example:
 ```
-# If any section missing, insert before ## Last Updated:
 Edit(file_path=".claude/cc-p4p/activeContext.md",
      old_string="## Last Updated",
      new_string="## Open Questions\n- [None yet]\n\n## Last Updated")
-
-# VERIFY after each heal
 Read(file_path=".claude/cc-p4p/activeContext.md")
 ```
+
+insights.md example:
+```
+Edit(file_path=".claude/cc-p4p/insights.md",
+     old_string="## Last Updated",
+     new_string="## Personas\n- [None identified yet]\n\n## Last Updated")
+Read(file_path=".claude/cc-p4p/insights.md")
+```
+
+roadmap-state.md example:
+```
+Edit(file_path=".claude/cc-p4p/roadmap-state.md",
+     old_string="## Last Updated",
+     new_string="## Capacity Notes\n- [Not yet assessed]\n\n## Last Updated")
+Read(file_path=".claude/cc-p4p/roadmap-state.md")
+```
+
+**VERIFY:** After ALL auto-heals, Read each file once more and confirm every required section exists.
 
 **UPDATE (Final):**
 - Do a workflow-final memory update after the agent completes.
@@ -252,6 +269,9 @@ TaskCreate({
    ## Existing Context
    {relevant insights from insights.md}
 
+   ## SKILL_HINTS (conditional skills if triggered)
+   {detected skills from CLAUDE.md Complementary Skills table, otherwise 'None'}
+
    ---
    IMPORTANT:
    - **NEVER call `EnterPlanMode`.** This is an execution agent.
@@ -328,7 +348,7 @@ VALIDATION:
 
 ## Agent Invocation Template
 
-**Pass task ID and context to each agent:**
+**Pass task ID, context, and conditional skills to each agent:**
 ```
 Task(subagent_type="cc-p4p:{agent_name}", prompt="
 ## Task Context
@@ -342,6 +362,10 @@ Task(subagent_type="cc-p4p:{agent_name}", prompt="
 
 ## PM Context
 {relevant context from insights.md and roadmap-state.md}
+
+## SKILL_HINTS (conditional skills if triggered)
+{detected skills from CLAUDE.md Complementary Skills table, otherwise 'None'}
+**If skills listed:** Call `Skill(skill="{skill-name}")` after memory load. If unavailable, note in Memory Notes and continue.
 
 ---
 IMPORTANT:

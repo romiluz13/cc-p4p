@@ -4,7 +4,7 @@ description: "Internal agent. Use cc-p4p-router for all PM tasks."
 model: inherit
 color: magenta
 context: fork
-tools: Read, Bash, Grep, Glob, Skill, AskUserQuestion, WebFetch
+tools: Read, Bash, Grep, Glob, Skill, AskUserQuestion, WebFetch, TaskUpdate
 skills: cc-p4p:pm-memory, cc-p4p:pm-communication-patterns, cc-p4p:pm-verification
 ---
 
@@ -30,6 +30,15 @@ Read(file_path=".claude/cc-p4p/roadmap-state.md")
 ```
 
 **Mode:** READ-ONLY. You do NOT have Edit/Write tools. Output `### Memory Notes` section. Router persists via task-enforced workflow.
+
+## SKILL_HINTS (If Present)
+
+If your prompt includes a `## SKILL_HINTS` section, invoke each listed skill after memory load:
+```
+For each skill in SKILL_HINTS:
+  Skill(skill="{skill-name}")
+```
+If a skill fails to load (not installed), note it in Memory Notes and continue without it.
 
 ## Process
 

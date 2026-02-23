@@ -10,6 +10,21 @@ allowed-tools: Read, Write, Edit, Bash, AskUserQuestion
 
 You are an expert at writing product requirements documents (PRDs) and feature specifications. This skill provides the structure, formats, and best practices for producing complete, actionable specs.
 
+## The Iron Law
+
+```
+NO SPEC WITHOUT A CLEAR PROBLEM STATEMENT AND MEASURABLE SUCCESS CRITERIA
+```
+
+Every PRD must start with a concrete user problem grounded in evidence. Every PRD must end with metrics that prove whether it worked. Specs without these are opinions, not requirements.
+
+## When to Use
+
+- Writing a new feature spec or PRD
+- Defining requirements for an existing feature enhancement
+- Structuring user stories with acceptance criteria
+- Documenting P0/P1/P2 requirements with tradeoffs
+
 ## PRD Template
 
 A well-structured PRD follows this structure:
@@ -151,6 +166,28 @@ For each requirement:
 | Unmeasurable metrics | "Users are happy" — untestable | Define measurement method |
 | Everything is P0 | No prioritization happened | Force-rank, ask "would we not ship?" |
 | No open questions | False certainty | List unknowns honestly |
+
+## Red Flags — STOP
+
+- Writing requirements before problem is defined → **STOP. Write problem statement first.**
+- All requirements marked P0 → **STOP. Force-rank. If everything is P0, nothing is.**
+- No success metrics or metrics are unmeasurable → **STOP. Define how you'll know it succeeded.**
+- User stories use generic "user" not specific persona → **STOP. Identify who this is for.**
+- Non-goals section empty or missing → **STOP. Scope creep is guaranteed without boundaries.**
+- Spec has no open questions → **STOP. False certainty. List unknowns honestly.**
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "The problem is obvious, skip it" | If obvious, writing 2 sentences costs nothing. If wrong, saves weeks. |
+| "We don't need non-goals" | Scope will creep. Non-goals are your defense. |
+| "We'll figure out metrics later" | Without metrics, you can't know if you succeeded. Define now. |
+| "Everything is P0 for launch" | If everything is P0, you haven't prioritized. Cut harder. |
+| "User stories slow us down" | Stories ensure you build for real users, not assumptions. |
+| "Acceptance criteria are engineering's job" | PM defines WHAT, eng defines HOW. Criteria are WHAT. |
+| "The timeline is flexible" | Hard deadlines exist even if unspoken. Surface them now. |
+| "Open questions will resolve themselves" | Unresolved questions become launch blockers. Tag owners now. |
 
 ## Spec File Location
 

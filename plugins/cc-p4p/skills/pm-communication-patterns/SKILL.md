@@ -10,6 +10,23 @@ allowed-tools: Read, Grep, Glob, AskUserQuestion
 
 Expert knowledge for stakeholder communications -- status updates, risk communication, decision documentation, and audience-adapted messaging. Every communication should be tailored to its audience.
 
+## The Iron Law
+
+```
+NO COMMUNICATION WITHOUT AUDIENCE IDENTIFICATION AND TONE MATCH
+```
+
+Every communication must name its audience before drafting begins. Tone, format, length, and detail level all flow from audience. Writing without audience is broadcasting noise.
+
+## When to Use
+
+- Drafting executive status updates
+- Writing engineering team updates
+- Preparing cross-functional partner communications
+- Writing customer-facing announcements
+- Documenting risks using ROAM framework
+- Recording decisions using ADR format
+
 ## Audience Templates
 
 ### Executive / Leadership
@@ -220,3 +237,25 @@ Before sending ANY communication:
 - [ ] Status/color justified by evidence (if applicable)
 - [ ] Links included where relevant
 - [ ] Reviewed for accuracy against latest data
+
+## Red Flags — STOP
+
+- Writing without identifying specific audience → **STOP. Who reads this determines everything.**
+- Internal jargon in customer communications → **STOP. Scan and replace before sending.**
+- Status color (Green/Yellow/Red) without evidence → **STOP. Justify every color with facts.**
+- Communication longer than audience expects → **STOP. Exec: <200 words. Customer: <250 words.**
+- No clear ask or next step → **STOP. Every communication needs actionable takeaway.**
+- Using same format for different audiences → **STOP. Exec update ≠ eng update ≠ customer update.**
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "The audience will figure out what's relevant" | No. You filter for them. That's the PM's job. |
+| "A little jargon is fine for customers" | It's not. Every internal term creates confusion and distance. |
+| "Green status because nothing is on fire" | Green means meeting commitments, not absence of crisis. Check the evidence. |
+| "I'll keep it Yellow to be safe" | Yellow means specific risk. Don't use it as default — it loses meaning. |
+| "This is just a quick update" | Quick updates still need structure. Template takes 2 minutes, saves reader 10. |
+| "Everyone knows what's going on" | They don't. If they did, you wouldn't need to send the update. |
+| "I'll add details in case they ask" | Don't. Keep it tight. They'll ask if they want more. |
+| "The same update works for all audiences" | Never. Exec wants strategy, eng wants specifics, customer wants benefits. |

@@ -10,6 +10,23 @@ allowed-tools: Read, Write, Edit, Bash, AskUserQuestion, WebFetch
 
 Expert knowledge for synthesizing user research, competitive intelligence, and customer feedback into structured insights. Turns raw data into actionable product decisions.
 
+## The Iron Law
+
+```
+NO SYNTHESIS WITHOUT EVIDENCE GRADING AND SOURCE TRIANGULATION
+```
+
+Every finding must state its evidence strength (Strong/Medium/Weak). Every theme must be checked against multiple sources. Research without grading is storytelling. Findings without triangulation are anecdotes.
+
+## When to Use
+
+- Synthesizing user interview notes
+- Analyzing survey results
+- Conducting competitive analysis
+- Processing customer feedback at scale
+- Building evidence-based personas
+- Sizing opportunities from research data
+
 ## Thematic Analysis Methodology
 
 The core method for synthesizing qualitative research:
@@ -242,6 +259,28 @@ Save to: `docs/research/YYYY-MM-DD-<topic>-synthesis.md`
 ## Open Questions
 - [Remaining unknowns]
 ```
+
+## Red Flags — STOP
+
+- Presenting findings without evidence strength grades → **STOP. Grade every finding Strong/Medium/Weak.**
+- Single source supporting a "key theme" → **STOP. One anecdote is not a theme. Need 3+ for Strong.**
+- Skipping triangulation → **STOP. Combine methods and sources before claiming confidence.**
+- Synthesizing without methodology stated → **STOP. Document how you collected and analyzed.**
+- Cherry-picking quotes that confirm hypothesis → **STOP. Present all themes including contradictory.**
+- Research report with no recommendations → **STOP. Research without action is waste.**
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "We only have one data source" | Then grade it Medium/Weak and say so. Don't present assumptions as findings. |
+| "The quotes speak for themselves" | Quotes are evidence, not findings. Themes require interpretation and grading. |
+| "We don't have time to triangulate" | Untriangulated findings lead to wrong decisions. Triangulation saves time long-term. |
+| "Everyone agrees, so it must be true" | Unanimous agreement may mean you asked leading questions. Check methodology. |
+| "The data is clear" | If clear, grading takes 30 seconds. If ambiguous, grading prevents overconfidence. |
+| "We'll validate later" | Later means after you've built the wrong thing. Validate strength now. |
+| "This user is very representative" | One user is N=1. Representative requires multiple participants showing same pattern. |
+| "Outliers aren't important" | Outliers may represent edge cases, future segments, or broken assumptions. Document them. |
 
 ## Anti-Patterns to Avoid
 

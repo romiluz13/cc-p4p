@@ -10,6 +10,22 @@ allowed-tools: Read, Write, Edit, Bash, AskUserQuestion
 
 Expert knowledge for product roadmap planning, prioritization, and communication. Provides frameworks for building roadmaps that are strategic, realistic, and actionable.
 
+## The Iron Law
+
+```
+NO ROADMAP WITHOUT SCORING CRITERIA AND EXPLICIT TRADEOFFS
+```
+
+Every roadmap item must be scored with a framework. Every prioritization must show what was traded off. Roadmaps without scoring are wish lists. Roadmaps without tradeoffs are fantasies.
+
+## When to Use
+
+- Building or updating a product roadmap
+- Prioritizing features or initiatives
+- Choosing between competing priorities
+- Communicating roadmap changes to stakeholders
+- Mapping dependencies across teams
+
 ## Roadmap Formats
 
 ### Now / Next / Later
@@ -167,3 +183,25 @@ Adjust based on context:
 - Batch updates at natural cadences unless truly urgent
 - Distinguish "strategic reprioritization" from "normal execution refinement"
 - Track change frequency -- frequent changes may signal unclear strategy
+
+## Red Flags — STOP
+
+- Prioritizing without a framework → **STOP. Pick RICE, MoSCoW, or ICE. Gut feel is not a method.**
+- All items in "Now" bucket → **STOP. If everything is Now, nothing is prioritized.**
+- No dependencies mapped → **STOP. Untracked dependencies are the #1 roadmap killer.**
+- Roadmap exceeds capacity with no cuts → **STOP. Cut scope or extend timeline. Don't pretend.**
+- Using Timeline/Gantt for external comms → **STOP. Creates false precision. Use Now/Next/Later.**
+- Items have no strategic alignment → **STOP. Every item must trace to a goal or OKR.**
+
+## Rationalization Prevention
+
+| Excuse | Reality |
+|--------|---------|
+| "We don't need a framework, I know what's important" | Frameworks force conversations, not just decisions. Stakeholders need to see your reasoning. |
+| "We'll fit it all in" | Capacity is finite. Adding without removing is lying to your team. |
+| "Dependencies will work themselves out" | They won't. Track them or get surprised. |
+| "We can't score this, it's strategic" | Strategic items need scoring too — use Confidence to express uncertainty. |
+| "Dates don't matter, we're agile" | Stakeholders need directional timing. Now/Next/Later avoids false precision. |
+| "Let's just start and see" | Starting without priorities means working on the wrong thing first. |
+| "The team knows what to do" | Implicit priorities cause conflicting work. Make it explicit. |
+| "We'll reprioritize next quarter" | If priorities are wrong now, waiting costs a quarter of effort. |
