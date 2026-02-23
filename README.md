@@ -44,19 +44,35 @@ User Request
 
 ## Quick Start
 
-### Install
+### Step 1: Install Plugin
 
-```bash
-# Clone the repository
-git clone https://github.com/romiluz13/cc-p4p.git
-
-# Add to your Claude Code plugins
-# (Follow Claude Code plugin installation instructions)
 ```
+/plugin marketplace add romiluz13/cc-p4p
+
+/plugin install cc-p4p@romiluz13
+```
+
+### Step 2: Setup Config Files
+
+Copy this README, paste it into Claude Code, and say: **"Set up cc-p4p for me"**
+
+### Step 3: Restart Claude Code
+
+Done!
 
 ### First Command
 
-Just describe what you need. The router detects intent automatically:
+Just describe what you need. The router detects intent and routes automatically:
+
+```
+/cc-p4p-router "Write a spec for SSO support"
+/cc-p4p-router "Synthesize these interview notes"
+/cc-p4p-router "Prioritize Q2 roadmap using RICE"
+/cc-p4p-router "Send weekly exec status update"
+/cc-p4p-router "Define metrics for onboarding flow"
+```
+
+Or after setup, just type naturally — cc-p4p auto-activates on any PM task:
 
 ```
 "Write a spec for SSO support"          → SPEC workflow
