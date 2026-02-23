@@ -1,0 +1,38 @@
+{
+  "name": "cc-p4p",
+  "owner": {
+    "name": "Rom Iluz",
+    "email": "rom@iluz.net",
+    "url": "https://github.com/romiluz13"
+  },
+  "metadata": {
+    "description": "cc-p4p v1.0.0 - The Intelligent Orchestrator for Product Managers",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "cc-p4p",
+      "description": "Orchestrated PM workflows with smart routing (SPEC/RESEARCH/ROADMAP/COMMUNICATE), persistent memory, evidence-based verification, and bundled PM domain expertise.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Rom Iluz",
+        "email": "rom@iluz.net",
+        "url": "https://github.com/romiluz13"
+      },
+      "homepage": "https://github.com/romiluz13/cc-p4p",
+      "repository": "https://github.com/romiluz13/cc-p4p",
+      "license": "MIT",
+      "keywords": [
+        "product-management",
+        "workflow-routing",
+        "orchestration",
+        "feature-specs",
+        "roadmap",
+        "stakeholder-comms",
+        "memory-persistence"
+      ],
+      "category": "productivity",
+      "source": "./plugins/cc-p4p"
+    }
+  ]
+}

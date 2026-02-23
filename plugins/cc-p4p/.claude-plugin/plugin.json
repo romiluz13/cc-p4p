@@ -1,0 +1,23 @@
+{
+  "name": "cc-p4p",
+  "version": "1.0.0",
+  "description": "Orchestrated PM workflows with smart routing (SPEC/RESEARCH/ROADMAP/COMMUNICATE), persistent memory, evidence-based verification, and bundled PM domain expertise. 4 agents, 8 skills, zero dependencies.",
+  "author": {
+    "name": "Rom Iluz",
+    "email": "rom@iluz.net",
+    "url": "https://github.com/romiluz13"
+  },
+  "homepage": "https://github.com/romiluz13/cc-p4p",
+  "repository": "https://github.com/romiluz13/cc-p4p",
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "workflow-routing",
+    "orchestration",
+    "feature-specs",
+    "roadmap",
+    "stakeholder-comms",
+    "memory-persistence",
+    "claude-code"
+  ]
+}
